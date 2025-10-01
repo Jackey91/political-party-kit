@@ -2,6 +2,19 @@
 
 Political Party Kit is a modular toolkit for political organizations. It supports internal organization, member management, campaigns, events, communication, and data analysis. Neutral, reusable, and extensible – currently a work in progress.
 
+## Dashboard
+
+Erstelle eine übersichtliche HTML-Dashboard-Seite, über die einzelne Module des Toolkits gestartet
+oder dokumentiert werden können:
+
+```bash
+python -m political_party_kit.dashboard --open
+```
+
+Der Befehl erzeugt eine Datei `dashboard.html` (standardmäßig im aktuellen Ordner) und öffnet sie
+bei Bedarf direkt im Browser. Die Seite listet alle verfügbaren Module auf und zeigt jeweils den
+zugehörigen Startbefehl sowie einen Link zur Dokumentation an.
+
 ## Meeting minutes module
 
 The `political_party_kit.meeting_minutes` package bundles a Whisper + GPT powered workflow for producing structured meeting minutes from audio recordings.  It offers a Python API as well as a CLI entry point.
